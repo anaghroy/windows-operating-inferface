@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Windows Desktop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="desktop" id="desktop">
+      <div class="icons" id="icons">
+        <div class="icon" id="notes" data-name="Notes">
+          <div class="thumb">🗒️</div>
+          <div class="label">Notes</div>
+        </div>
+      </div>
+    </main>
+
+    <div class="taskbar" id="taskbar">
+
+  <!-- LEFT SECTION -->
+  <div class="taskbar-left">
+    <!-- Start Button -->
+    <div class="taskbar-item start-btn">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg"
+        alt=""
+      />
+    </div>
+
+    <!-- Search Bar -->
+    <div id="search-bar">
+      <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="" />
+      <span>Type here to search</span>
+    </div>
+  </div>
+
+  <!-- CENTERED APPS -->
+  <div class="taskbar-center">
+    <div class="taskbar-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/2504/2504911.png" />
+    </div>
+
+    <div class="taskbar-item">
+      <img src="./powerpoint.png" alt="powerpoint" />
+    </div>
+
+    <div class="taskbar-item">
+      <img src="./bing.png" alt="bing"/>
+    </div>
+
+    <div class="taskbar-item">
+      <img src="./microsoft.png" alt="microsoft" />
+    </div>
+
+    <div class="taskbar-item">
+      <img src="./chrome.png" alt="chrome" />
+    </div>
+
+    <div class="taskbar-item">
+      <img src="./social.png" alt="social" />
+    </div>
+
+    <div class="taskbar-item">
+      <img src="./excel.png" />
+    </div>
+  </div>
+
+  <!-- RIGHT SECTION -->
+  <div id="system-tray">
+    <div class="tray-icon"><img src="./wifi.png" /></div>
+    <div class="tray-icon"><img src="./volume.png" /></div>
+    <div class="tray-icon"><img src="./power.png" /></div>
+    <div id="time"></div>
+  </div>
+
+  <div class="task-icons" id="taskIcons"></div>
+</div>
+
+
+    <div id="contextMenu" class="context-menu" style="display: none">
+      <div class="item" data-action="new-folder">New Folder</div>
+      <div class="item has-submenu">
+        View ▶
+        <div class="submenu">
+          <div class="item" data-action="view-large">Large icons</div>
+          <div class="item" data-action="view-medium">Medium icons</div>
+          <div class="item" data-action="view-small">Small icons</div>
+        </div>
+      </div>
+      <div class="item" data-action="refresh">Refresh</div>
+      <div class="divider"></div>
+      <div class="item" data-action="sort">Sort by</div>
+    </div>
+
+    
+  </body>
+</html>
