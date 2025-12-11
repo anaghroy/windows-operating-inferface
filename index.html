@@ -17,70 +17,75 @@
     </main>
 
     <div class="taskbar" id="taskbar">
+      <!-- LEFT SECTION -->
+      <div class="taskbar-left">
+        <!-- Start Button -->
+        <div class="taskbar-item start-btn">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg"
+            alt=""
+          />
+        </div>
 
-  <!-- LEFT SECTION -->
-  <div class="taskbar-left">
-    <!-- Start Button -->
-    <div class="taskbar-item start-btn">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg"
-        alt=""
-      />
+        <!-- Search Bar -->
+        <div id="search-bar">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/622/622669.png"
+            alt=""
+          />
+          <span>Type here to search</span>
+        </div>
+      </div>
+
+      <!-- CENTERED APPS -->
+      <div class="taskbar-center">
+        <div class="taskbar-item">
+          <img src="https://cdn-icons-png.flaticon.com/512/2504/2504911.png" />
+        </div>
+
+        <div class="taskbar-item">
+          <img src="./powerpoint.png" alt="powerpoint" />
+        </div>
+
+        <div class="taskbar-item">
+          <img src="./bing.png" alt="bing" />
+        </div>
+
+        <div class="taskbar-item">
+          <img src="./microsoft.png" alt="microsoft" />
+        </div>
+
+        <div class="taskbar-item">
+          <img src="./chrome.png" alt="chrome" />
+        </div>
+
+        <div class="taskbar-item">
+          <img src="./social.png" alt="social" />
+        </div>
+
+        <div class="taskbar-item">
+          <img src="./excel.png" />
+        </div>
+      </div>
+
+      <!-- RIGHT SECTION -->
+      <div id="system-tray">
+        <div class="tray-icon"><img src="./wifi.png" alt="wifi" /></div>
+        <div class="tray-icon"><img src="./volume.png" alt="olume" /></div>
+        <div class="tray-icon"><img src="./power.png" alt="power" /></div>
+        <div id="time"></div>
+      </div>
+
+      <div class="task-icons" id="taskIcons"></div>
     </div>
-
-    <!-- Search Bar -->
-    <div id="search-bar">
-      <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="" />
-      <span>Type here to search</span>
-    </div>
-  </div>
-
-  <!-- CENTERED APPS -->
-  <div class="taskbar-center">
-    <div class="taskbar-item">
-      <img src="https://cdn-icons-png.flaticon.com/512/2504/2504911.png" />
-    </div>
-
-    <div class="taskbar-item">
-      <img src="./powerpoint.png" alt="powerpoint" />
-    </div>
-
-    <div class="taskbar-item">
-      <img src="./bing.png" alt="bing"/>
-    </div>
-
-    <div class="taskbar-item">
-      <img src="./microsoft.png" alt="microsoft" />
-    </div>
-
-    <div class="taskbar-item">
-      <img src="./chrome.png" alt="chrome" />
-    </div>
-
-    <div class="taskbar-item">
-      <img src="./social.png" alt="social" />
-    </div>
-
-    <div class="taskbar-item">
-      <img src="./excel.png" />
-    </div>
-  </div>
-
-  <!-- RIGHT SECTION -->
-  <div id="system-tray">
-    <div class="tray-icon"><img src="./wifi.png" /></div>
-    <div class="tray-icon"><img src="./volume.png" /></div>
-    <div class="tray-icon"><img src="./power.png" /></div>
-    <div id="time"></div>
-  </div>
-
-  <div class="task-icons" id="taskIcons"></div>
-</div>
-
 
     <div id="contextMenu" class="context-menu" style="display: none">
-      <div class="item" data-action="new-folder">New Folder</div>
+      <div class="item" data-action="new-folder">
+        <img src="./web.png" alt="add" />
+        New Folder
+      </div>
       <div class="item has-submenu">
+        <img src="./menu.png" alt="menu" />
         View ▶
         <div class="submenu">
           <div class="item" data-action="view-large">Large icons</div>
@@ -88,11 +93,35 @@
           <div class="item" data-action="view-small">Small icons</div>
         </div>
       </div>
-      <div class="item" data-action="refresh">Refresh</div>
+      <div class="item" data-action="refresh">
+        <img src="./refresh.png" alt="refresh" />Refresh
+      </div>
       <div class="divider"></div>
-      <div class="item" data-action="sort">Sort by</div>
+      <div class="item" data-action="sort">
+        <img src="./sort-by.png" alt="sort-by" />
+        Sort by
+      </div>
+      <div class="divider"></div>
+      <div class="item" data-action="display setting">
+        <img src="./display.png" alt="display" />
+        Display settings
+      </div>
+      <div class="item" data-action="edit">
+        <img src="./edit.png" alt="edit" />
+        Personalize
+      </div>
+      <div class="divider"></div>
+      <div class="item" data-action="terminal">
+        <img src="./terminal.png" alt="terminal" />
+        Open in Terminal
+      </div>
+      <div class="divider"></div>
+      <div class="item" data-action="show-more">
+        <img src="./app.png" alt="show-more" />
+        Show more options
+      </div>
     </div>
 
-    
+    <script src="script.js"></script>
   </body>
 </html>
