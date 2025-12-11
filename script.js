@@ -2,6 +2,8 @@ const desktop = document.getElementById("desktop");
 const contextMenu = document.getElementById("contextMenu");
 const icons = document.getElementById("icons");
 let folderCount = 1;
+const startBtn = document.querySelector(".start-btn");
+const startMenu = document.getElementById("start-menu");
 
 // Disable default right-click
 window.addEventListener("contextmenu", (e) => {
@@ -127,3 +129,15 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
+
+// Start-Menu
+startBtn.addEventListener("click", () => {
+  startMenu.classList.toggle("hidden");
+});
+
+// Close Start Menu on clicking outside
+document.addEventListener("click", (e) => {
+  if (!startMenu.contains(e.target) && !startBtn.contains(e.target)) {
+    startMenu.classList.add("hidden");
+  }
+});
